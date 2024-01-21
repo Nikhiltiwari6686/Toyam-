@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        nav {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #666;
+}
+.body{
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;   
+  color: skyblue;
+font-family: 'Lora', serif;
+
+}
+
+#top{
+     background-color: whitesmoke;
+    color: aliceblue;
+   
+}
+
+.column-left {
+  float: left;
+  width: 16.66%;
+  height: 1500px;
+   background-color: skyblue;
+   border: black;
+}
+
+
+.column-middle{
+    
+    float: left;
+    width: 83.34%;
+    background-color: white;
+    
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+}
+
+.column{
+    width: 100%;
+   
+    background-color: silver;
+    text-align: center;
+    display: grid;
+}
+
+.header img {
+    margin: auto;
+    width: 472px;
+    height: 96px; 
+    box-sizing: content-box;
+}
+
+/*     NavaBar         */
+ #navbar {
+  overflow: hidden;
+  background-color: skyblue;
+  z-index: 1;
+  border: 3px solid black;
+  border-radius: 0px;    
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;    
+}
+
+
+#navbar img{
+    margin: 2px 2px 2px 20px;
+    float: left;
+    cursor: pointer;
+}
+
+#navbar input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 7px 0 0 7px;    
+}
+
+#navbar .userButton  {
+    border: 0;
+    float: right;
+    margin-top: 3px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+#navbar .search-container button {
+  float: right;
+  padding-top: 9px;    
+  padding: 2px;     
+  background: #ddd;
+  font-size: 17px;
+  border: none;  
+  border-radius: 7px;   
+  cursor: pointer;
+  border-radius: 0 7px 7px 0;      
+}
+
+#navbar .search-container{
+    position: absolute;
+        right: 123px;
+    margin-top: 6px;
+       
+    display: inline-block;
+}
+
+        </style>
+</head>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact</a>
+    <a href-="/vision">Vision</a>
+    <a href="gallary.html">Photo Gallery</a>
+    <a href="/akd">Information</a>
+    <a href="complaintbox.html">Register Compliant</a>
+  
+</nav>
+
+
+
+<div class="row">
+    <div class="column" id="top">
+        <div class="header">
+            <h1>
+                <center>
+                    WATER PIPELINE 
+                </center>
+            </h1>
+        </div>
+    </div>
+</div>
+<div id="navbar">
+    <a href="http://192.168.76.162:5500/index.html#"><img src="logo11.jpg" width="50"></a>
+    <div class="search-container">
+        <input id="searchinput" type="text" placeholder="Search.." name="search">
+        <button id="submit"><i class="large material-icons">search</i></button>
+    </div>
+  <script src="searchbar.js"></script>
+
+
+    <button class='userButton' onclick="document.getElementById('id01').style.display='block' " style="width:auto;"><img src="Images/ass.png">
+    </button>
+
+</div>
+    <div class="gallery">
+        <a target="_blank" href="">
+          <img src="pipline1.webp" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="pipeline2.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="pipline3.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="pipeline4.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    
+</body>
+</html>

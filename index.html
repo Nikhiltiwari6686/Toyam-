@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="filters/css/vmenuModule.css" >
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vmenuModule.css">
+
+    <title>Toyam Pipline</title>
+
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <link rel="stylesheet" href="CSS/Form.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="searchmodal.css">
+</head>
+
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="homepage.html">About Us</a>
+        <a href="/contact">Contact</a>
+        <a href-="/vision">Recent complaint</a>
+        <a href="gallary.html">Photo Gallery</a>
+        <a href="/akd">Information</a>
+        <a href="complaintbox.html">Register Compliant</a>
+        <a href="showpipeline.html">View Pipeline</a>
+        <a href="trackcomp.html">Track Complaint</a>
+        <a href="loginform.html">LOGIN</a>
+    </nav>
+    <div class="row">
+        <div class="column" id="top">
+            <div class="header">
+                <h1>
+                    <center>
+                        <h>WATER PIPELINE</h>
+                    </center>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <a href="index.html"><img src="logotoyam.png" width="120"></a>
+        <div class="search-container">
+            <input id="searchinput" type="text" placeholder="Search.." name="search">
+            <button id="submit"><i class="large material-icons">search</i></button>
+        </div>
+      <script src="searchbar.js"></script>
+
+
+        <button class='userButton' onclick="document.getElementById('id01').style.display='block' " style="width:auto;"><img src="Images/ass.png">
+        </button>
+
+    </div>
+
+    <div class="row">
+        <div class="column" id="carousel">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="earth.webp">
+                    <div class="text">Save Water</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="mapdelhi.png">
+                    <div class="text">Delhi water system</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="mapdelhi2.png">
+                    <div class="text">DDA Map</div>
+                </div>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column-left">
+            <a class="filterbutton">Notice</a>
+            <div id="content">
+                <div class="u-vmenu">
+                    
+                </div>
+                <div class="notice-board">
+                    <h2>Recent</h2>
+                    <div class="notice">
+                        <h3>Important Announcement</h3>
+                        <ul>
+                            <li><p>Pragrati maidan Pipeline is under maintainance.</p></li>
+                            <li><p>New Water pipline constructed at jagrati vihar.  </p></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="notice">
+                        <h3>Upcoming Event</h3>
+                        <p>We have an upcoming event on October 15th. Don't miss it!</p>
+                    </div>
+                    <!-- Add more notices here as needed -->
+                </div>
+            </div>
+        </div>
+<div>
+    <h1>
+        About Page
+    </h1>
+</div>
+    <!--script for carousel-->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        // script for filter dropdown   
+
+    </script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="filters/js/vmenuModule.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".u-vmenu").vmenuModule({
+                Speed: 200,
+                autostart: true,
+                autohide: true
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+
+</body>
+
+</html>
